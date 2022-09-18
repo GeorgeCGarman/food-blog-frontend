@@ -9,6 +9,7 @@ import {
   Spacer,
 } from "@chakra-ui/react"
 import { useState } from "react"
+const baseUrl = "http://localhost:1337"
 
 export default function PostPreview({ post }) {
   const [hover, setHover] = useState(false)
@@ -17,6 +18,7 @@ export default function PostPreview({ post }) {
   //     backgroundColor: hover ? "red" : "blue"
   //   }
   // }}
+  console.log("post :>> ", baseUrl + post.images.data[0].attributes.url)
   return (
     <>
       <Box
@@ -47,7 +49,10 @@ export default function PostPreview({ post }) {
           </WrapItem>
           <WrapItem>
             <Box boxSize="2xs" h="100%" className="content">
-              <Image src={post.images[0].url} alt="Food image" />
+              <Image
+                src={baseUrl + post.images.data[0].attributes.url}
+                alt="Food image"
+              />
               <Heading mt={2} fontSize="xl">
                 {post.location}
               </Heading>
