@@ -21,16 +21,17 @@ export default function PostPreviews() {
   function orderByDate(post1, post2) {
     const a = new Date(post1)
     const b = new Date(post2)
+    return a - b
 
-    if (a.getTime() < b.getTime()) {
-      return -1
-    }
-    if (a.getTime() > b.getTime()) {
-      return 1
-    }
-    if (a.getTime() > b.getTime()) {
-      return 0
-    }
+    // if (a.getTime() < b.getTime()) {
+    //   return -1
+    // }
+    // if (a.getTime() > b.getTime()) {
+    //   return 1
+    // }
+    // if (a.getTime() > b.getTime()) {
+    //   return 0
+    // }
   }
   return (
     <Box
