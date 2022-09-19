@@ -36,7 +36,8 @@ export default function PostPreview({ post }) {
         <Wrap>
           <WrapItem>
             <Box
-              boxSize="2xs"
+              boxSize="xs"
+              height="100%"
               display="flex"
               alignItems="center"
               justifyContent="center"
@@ -48,7 +49,7 @@ export default function PostPreview({ post }) {
             </Box>
           </WrapItem>
           <WrapItem>
-            <Box boxSize="2xs" h="100%" className="content">
+            <Box boxSize="xl" h="100%" className="content">
               <Image
                 src={baseUrl + post.images.data[0].attributes.url}
                 alt="Food image"
