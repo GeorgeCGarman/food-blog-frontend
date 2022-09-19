@@ -5,7 +5,6 @@ import { ChakraProvider } from "@chakra-ui/react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import PostPreviews from "./PostPreviews"
 import Post from "./Post"
-import { extendTheme } from "@chakra-ui/react"
 
 // const theme = extendTheme({
 //   styles: {

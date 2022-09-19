@@ -1,7 +1,6 @@
-import axios from "axios"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { background, Box, flexbox, Heading, Text } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 import PostPreview from "./PostPreview"
 import postService from "./postService"
 

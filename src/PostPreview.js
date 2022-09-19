@@ -1,13 +1,4 @@
-import {
-  Image,
-  Box,
-  Text,
-  Heading,
-  Wrap,
-  WrapItem,
-  Flex,
-  Spacer,
-} from "@chakra-ui/react"
+import { Image, Box, Text, Heading, Wrap, WrapItem } from "@chakra-ui/react"
 import { useState } from "react"
 const baseUrl = "http://localhost:1337"
 
