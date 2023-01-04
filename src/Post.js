@@ -6,8 +6,6 @@ import { useEffect, useState } from "react"
 import postService from "./postService"
 import { Gallery } from "react-grid-gallery"
 
-const baseUrl = "http://localhost:1337"
-
 function Post() {
   let params = useParams()
   let navigate = useNavigate()
@@ -19,7 +17,7 @@ function Post() {
       const imageData = result.images.data.map((image) => {
         const format = image.attributes.formats.medium
         return {
-          src: baseUrl + image.attributes.url,
+          src: postService.baseUrl + image.attributes.url,
           width: format.width,
           height: format.height,
         }
