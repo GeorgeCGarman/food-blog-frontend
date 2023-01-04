@@ -27,4 +27,5 @@ const getSingle = (id) => {
   return axios(configuration).then((result) => result.data.data.attributes)
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default { getAll, getSingle }
