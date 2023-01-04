@@ -28,7 +28,7 @@ function Post() {
       setImages(imageData)
       setPost(result)
     })
-  }, [])
+  }, [params.postId])
   if (!post) return <></>
   return (
     <Box style={{ padding: "2em 5em" }}>
